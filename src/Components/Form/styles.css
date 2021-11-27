@@ -1,0 +1,231 @@
+body {
+  background: #e9eff6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  textarea:focus-visible,
+  input:focus-visible {
+    outline: none;
+  }
+
+  :focus-visible {
+      outline: none;
+  }
+
+  textarea{
+    height: 80px;
+    width: 100%;
+  }
+
+  .GroupTitle{
+    background-color: #FFF;
+    padding: 10px 35px;
+    width: min-content;
+    height: min-content;
+  }
+
+  form {
+    min-width: 450px;
+    max-width: 500px;
+    background-color: #FFF;
+    padding: 10px 35px;
+    border-radius: 4px;
+  }
+  
+  h1 {
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  p {
+    color: #bf1650;
+  }
+  
+  p::before {
+    display: inline;
+    content: "⚠ ";
+  }
+  
+  input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #c1c1c1;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  input[type="date"]{
+    width: 50% !important;
+  }
+  
+  button[type="submit"]{
+    border:none;
+  }
+
+  button[type="submit"],
+  input[type="submit"] {
+    background: #048cff;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover,
+  input[type="submit"]:hover {
+    background: #007bdf;
+  }
+  
+  button[type="submit"]:active,
+  input[type="button"]:active,
+  input[type="submit"]:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    border: 1px solid transparent;
+    opacity: 0.8;
+  }
+  
+  input:disabled {
+    opacity: 0.4;
+  }
+  
+  input[type="button"]:hover {
+    transition: 0.3s all;
+  }
+  
+  button[type="submit"],
+  input[type="button"],
+  input[type="submit"] {
+    -webkit-appearance: none;
+  }
+  
+  
+  button[type="button"] {
+    display: block;
+    appearance: none;
+    background: #333;
+    color: black;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  pre {
+    color: black;
+  }
+  
+  hr {
+    margin-top: 30px;
+  }
+  
+  button {
+    display: block;
+    appearance: none;
+    margin-top: 40px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+
+  input.input{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: unset;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: block;
+    box-sizing: border-box;
+    width: unset;
+    border-radius: 0;
+    border: 1px solid #c1c1c1;
+    padding: 10px 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 0;
+  }
+
+  .groupradio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+  }
+
+  .groupradio>label{
+    line-height: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .colorblue{
+    color: rgb(95, 95, 255);
+  }
+
+  h2:not(.colorblue){
+    width: max-content;
+  }
+
+  @media screen and (max-width:900px){
+    .App{
+      flex-direction: column;
+    }
+
+    form{
+      min-width: 0;
+      margin: 0 5px 20px 5px;
+    }
+
+    .GroupTitle{
+      margin: 0 auto;
+    }
+    input[type="date"]{
+      width: 60% !important;
+    }
+  }

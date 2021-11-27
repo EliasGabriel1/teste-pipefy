@@ -4,9 +4,12 @@
 
 repo no github <a href="https://github.com/pipefy/RecruitmentExercise/blob/master/FRONTENDEXERCISE.md"> Clique aqui para abrir o repositório</a>
 
+Projeto completo em 1 hora e 35 minutos.
+
 Não fiz tanta componetização como de costume, e nem usei styled components como costumo usar, mas fiz assim para ser mais rápido, o teste não exige nenhum dos dados acima, apenas fazer tudo em react como foi feito.
 
 validações dos campos e campos de string aceita números porém irá ser entregue como string entre aspas na api.
+
 
 Libs usada:
 
@@ -21,5 +24,4 @@ Libs usada:
 "react-dom": "^17.0.2",
 "react-scripts": "4.0.3",
 "web-vitals": "^1.0.1",
-"yup": "^0.32.11"# teste-pipefy
-# teste-pipefy
+"yup": "^0.32.11"
