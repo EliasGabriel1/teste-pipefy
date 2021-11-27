@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import moment from "moment";
 import "./styles.css";
-import axios from "axios";
+// import axios from "axios";
 
 // const api = axios.create({
 //   baseURL: "url da api",
